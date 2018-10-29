@@ -13,8 +13,9 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Navigation />
-          <Switch>
+          <Switch> //for undisplaying {Error} to every pages
             <Route path="/" component={Home} exact />
+            //exact :  witout exact, /about, /contact also displaying Home
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
             <Route component={Error} />
